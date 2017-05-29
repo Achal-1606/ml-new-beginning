@@ -38,10 +38,11 @@ def cost_function_3d_plot(in_list):
     x = []
     y = []
     z = []
-    for s in in_list:
-        z.append(s[0])
-        x.append(s[1][0][0])
-        y.append(s[1][0][1])
+    for num, s in enumerate(in_list):
+        if num != 0:
+            z.append(s[0])
+            x.append(s[1][0][0])
+            y.append(s[1][0][1])
     # print x_axis
     # print y_axis
     # print z_axis
@@ -51,6 +52,7 @@ def cost_function_3d_plot(in_list):
     x_i, y_i = np.meshgrid(x, y)
     surf = ax.plot_surface(x_i, y_i, z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
     ax.zaxis.set_major_locator(LinearLocator(10))
+    ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
     fig.colorbar(surf, shrink=0.5, aspect=5)
     matplotlib.pyplot.show()
 
