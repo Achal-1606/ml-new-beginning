@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot
+import scipy.interpolate
+import matplotlib.mlab as mlab
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
 from matplotlib.ticker import LinearLocator, FormatStrFormatter
@@ -32,6 +34,23 @@ def compute_j_theta_per_iteration(in_arr, out_arr, alpha, theta):
     theta_new = theta.T - ((alpha / m) * temp).reshape(theta.T.shape)
     # print theta_new.reshape(1, 2).tolist()
     return j, theta_new.reshape(1, 2).tolist()
+
+
+def cost_function_contour_plot(in_list):
+    x = []
+    y = []
+    z = []
+    for num, s in enumerate(in_list):
+        if num != 0:
+            z.append(s[0])
+            x.append(s[1][0][0])
+            y.append(s[1][0][1])
+    xi, yi = np.meshgrid(x, y)
+    matplotlib.pyplot.figure()
+    rbf = scipy.interpolate.Rbf(x, y, z, function='linear')
+    zi = rbf(xi, yi)
+    matplotlib.pyplot.contour(xi, yi, zi)
+    matplotlib.pyplot.show()
 
 
 def cost_function_3d_plot(in_list):
@@ -85,7 +104,7 @@ if __name__ == '__main__':
     j_test = cost_function(arr_in, arr_out, theta_test)
     print "Cost Function :- {}".format(j_test)
 
-    num_iteration = 1000
+    num_iteration = 500
     out_list = []
     alpha = 0.01
     theta = np.array([0, 0]).reshape(1, 2)
@@ -100,7 +119,8 @@ if __name__ == '__main__':
     theta_final = final_values[1][0]
     print "Theta values :- %s" % theta_final
 
-    cost_function_3d_plot(out_list)
+    # cost_function_3d_plot(out_list)
+    cost_function_contour_plot(out_list)
 
     axes = matplotlib.pyplot.gca()
     axes.set_xlim([min(x_axis) - 1, max(x_axis) + 2])
