@@ -58,7 +58,7 @@ def cost_function_3d_plot(in_list):
     y = []
     z = []
     for num, s in enumerate(in_list):
-        if num != 0:
+        if num not in range(5):
             z.append(s[0])
             x.append(s[1][0][0])
             y.append(s[1][0][1])
@@ -67,16 +67,18 @@ def cost_function_3d_plot(in_list):
     # print z_axis
     print "Plotting 3d plot for Cost Function vs theta..."
     fig = matplotlib.pyplot.figure()
-    ax = fig.gca(projection='3d')
+#    ax = fig.gca(projection='3d')
+    ax = fig.add_subplot(111, projection='3d')
     x_i, y_i = np.meshgrid(x, y)
+    plotz = scipy.interpolate.griddata((x, y), z, (x_i, y_i), method='linear')
     surf = ax.plot_surface(x_i, y_i, z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
-    ax.zaxis.set_major_locator(LinearLocator(10))
-    ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
-    fig.colorbar(surf, shrink=0.5, aspect=5)
+#    ax.zaxis.set_major_locator(LinearLocator(10))
+#    ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
+#    fig.colorbar(surf, shrink=0.5, aspect=5)
     matplotlib.pyplot.show()
 
 if __name__ == '__main__':
-    data_set = pd.read_csv("E:\\ml_repository\ex1.txt", sep=",", header=None)
+    data_set = pd.read_csv("ex1.txt", sep=",", header=None)
     data_set.columns = ["Population_in_10000s", "Profit_in_$10000"]
     # print data_set.head()
     x_axis = data_set.Population_in_10000s.values
@@ -119,8 +121,8 @@ if __name__ == '__main__':
     theta_final = final_values[1][0]
     print "Theta values :- %s" % theta_final
 
-    # cost_function_3d_plot(out_list)
-    cost_function_contour_plot(out_list)
+    cost_function_3d_plot(out_list)
+    #cost_function_contour_plot(out_list)
 
     axes = matplotlib.pyplot.gca()
     axes.set_xlim([min(x_axis) - 1, max(x_axis) + 2])
