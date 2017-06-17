@@ -1,11 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot
-import scipy.interpolate
-import matplotlib.mlab as mlab
-from mpl_toolkits.mplot3d import Axes3D
-from matplotlib import cm
-from matplotlib.ticker import LinearLocator, FormatStrFormatter
 
 
 def cost_function(in_arr, out_arr, theta1):
@@ -36,47 +31,6 @@ def compute_j_theta_per_iteration(in_arr, out_arr, alpha, theta):
     return j, theta_new.reshape(1, 2).tolist()
 
 
-def cost_function_contour_plot(in_list):
-    x = []
-    y = []
-    z = []
-    for num, s in enumerate(in_list):
-        if num != 0:
-            z.append(s[0])
-            x.append(s[1][0][0])
-            y.append(s[1][0][1])
-    xi, yi = np.meshgrid(x, y)
-    matplotlib.pyplot.figure()
-    rbf = scipy.interpolate.Rbf(x, y, z, function='linear')
-    zi = rbf(xi, yi)
-    matplotlib.pyplot.contour(xi, yi, zi)
-    matplotlib.pyplot.show()
-
-
-def cost_function_3d_plot(in_list):
-    x = []
-    y = []
-    z = []
-    for num, s in enumerate(in_list):
-        if num not in range(5):
-            z.append(s[0])
-            x.append(s[1][0][0])
-            y.append(s[1][0][1])
-    # print x_axis
-    # print y_axis
-    # print z_axis
-    print "Plotting 3d plot for Cost Function vs theta..."
-    fig = matplotlib.pyplot.figure()
-#    ax = fig.gca(projection='3d')
-    ax = fig.add_subplot(111, projection='3d')
-    x_i, y_i = np.meshgrid(x, y)
-    plotz = scipy.interpolate.griddata((x, y), z, (x_i, y_i), method='linear')
-    surf = ax.plot_surface(x_i, y_i, z, cmap=cm.coolwarm, linewidth=0, antialiased=False)
-#    ax.zaxis.set_major_locator(LinearLocator(10))
-#    ax.zaxis.set_major_formatter(FormatStrFormatter('%.02f'))
-#    fig.colorbar(surf, shrink=0.5, aspect=5)
-    matplotlib.pyplot.show()
-
 if __name__ == '__main__':
     data_set = pd.read_csv("ex1.txt", sep=",", header=None)
     data_set.columns = ["Population_in_10000s", "Profit_in_$10000"]
@@ -106,12 +60,17 @@ if __name__ == '__main__':
     j_test = cost_function(arr_in, arr_out, theta_test)
     print "Cost Function :- {}".format(j_test)
 
-    num_iteration = 500
+    num_iteration = 1500
     out_list = []
     alpha = 0.01
     theta = np.array([0, 0]).reshape(1, 2)
+    j_per_iteration = []
+    x_ticks = []
     for i in range(num_iteration):
         out_mod = compute_j_theta_per_iteration(arr_in, arr_out, alpha, theta)
+        if i != 0:
+            j_per_iteration.append(out_mod[0])
+            x_ticks.append(i + 1)
         out_list.append(out_mod)
         theta = np.array(out_mod[1])
         # print theta
@@ -121,8 +80,11 @@ if __name__ == '__main__':
     theta_final = final_values[1][0]
     print "Theta values :- %s" % theta_final
 
-    cost_function_3d_plot(out_list)
-    #cost_function_contour_plot(out_list)
+    print "x_ticks :{}".format(x_ticks[:5])
+    print "J value per ticks :{}".format(j_per_iteration[:5])
+    matplotlib.pyplot.plot(x_ticks, j_per_iteration)
+    print "Plotting cost function plot...."
+    matplotlib.pyplot.show()
 
     axes = matplotlib.pyplot.gca()
     axes.set_xlim([min(x_axis) - 1, max(x_axis) + 2])
