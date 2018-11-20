@@ -83,39 +83,39 @@
     - The __SparkSession__
         + initialize this manually
         + To create spark session in Python
-```
+    ```
+    from pyspark.sql import SparkSession
 
-from pyspark.sql import SparkSession
+    spark = SparkSession.builder.master('local')\
+                                .appName('<app name>')\
+                                .config('spark.some.config.option', 'some-value')\
+                                .getOrCreate()
+    ```
 
-spark = SparkSession.builder.master('local')\
-                            .appName('<app name>')\
-                            .config('spark.some.config.option', 'some-value')\
-                            .getOrCreate()
-```
         + Old Version used to create SparkContext (but this is not the way to be used now)
     - The __SparkContext__
         + represent the connection to the Spark cluster
         + helps to communicate with some of Spark's lower level API, such as RDDs
         + can create RDDs, accumulators & broadcast variables
-```
 
-from pyspark import SparkContext
-logFile = "file:///local/file/path"
-sc = SparkContext("local", "first app")
-logData = sc.textFile(logFile).cache()
 
-```
+            ```
+            from pyspark import SparkContext
+            logFile = "file:///local/file/path"
+            sc = SparkContext("local", "first app")
+            logData = sc.textFile(logFile).cache()
+            ```
         + The Sparkcontext can also be created __using the SparkSession__. (_the step below need to be evaluated_)
-```
-from pyspark.sql import SparkSession
+        ```
+        from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.master('local')\
-                            .appName('<app name>')\
-                            .config('spark.some.config.option', 'some-value')\
-                            .getOrCreate()
+        spark = SparkSession.builder.master('local')\
+                                    .appName('<app name>')\
+                                    .config('spark.some.config.option', 'some-value')\
+                                    .getOrCreate()
 
-sc = spark.SparkContext
-```
+        sc = spark.SparkContext
+        ```
         + For Spark 2.x, the 2 apis SQLContext & SparkContext has been combined into SparkSession. You can also create Spark and SQL context from their respective getOrCreate() func, but it is not necessary now.
 
     - The Spark Job
