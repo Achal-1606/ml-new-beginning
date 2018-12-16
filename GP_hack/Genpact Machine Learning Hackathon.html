@@ -1,0 +1,1797 @@
+<!DOCTYPE html>
+<html class="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title> Genpact Machine Learning Hackathon </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content=" Genpact Machine Learning Hackathon | Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact">
+    <meta name="author" content="">
+    <meta property="og:url" content="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="">
+    <meta property="og:description" content=" Genpact Machine Learning Hackathon | Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact">
+    <meta property="og:image" content="https://datahack-prod.s3.amazonaws.com/contest_icon/hackathon_2_500X250_1.jpg">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+        <!-- For AB testing optimisation-->
+    <style>.async-hide { opacity: 0 !important} </style>
+    <!-- Webengage Code -->
+    <script async="" src="Genpact%20Machine%20Learning%20Hackathon_files/gtm.js"></script><script async="" src="Genpact%20Machine%20Learning%20Hackathon_files/fbevents.js"></script><script async="" src="Genpact%20Machine%20Learning%20Hackathon_files/qevents.asc"></script><script type="text/javascript" async="" src="Genpact%20Machine%20Learning%20Hackathon_files/a.js"></script><script type="text/javascript" async="" src="Genpact%20Machine%20Learning%20Hackathon_files/webengage-min-v-6.js"></script><script id="_webengage_script_tag" type="text/javascript"> var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."), arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="feedback survey notification".split(z),c="options render clear abort".split(z),p="Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src="https://ssl.widgets.webengage.com/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");webengage.init("826181ba");
+    </script>
+
+    <script>
+      (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date; h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')}; (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c; })(window,document.documentElement,'async-hide','dataLayer',4000, {'GTM-WMW93Z4':true});
+    </script>
+    <!-- End AB testing -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="Genpact%20Machine%20Learning%20Hackathon_files/js.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-67190105-1');
+    </script>
+    <!--<link rel='icon' id='favicon' type='image/png' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='76x76' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='114x114' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'><link rel='apple-touch-icon' sizes='144x144' href='https://www.analyticsvidhya.com/wp-content/uploads/2015/02/logo_square_v2.jpg'>
+-->
+
+    <link rel="stylesheet" href="Genpact%20Machine%20Learning%20Hackathon_files/663f50c8d022.css" type="text/css">
+
+
+    <link href="Genpact%20Machine%20Learning%20Hackathon_files/font-awesome.css" rel="stylesheet">
+    
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="https://datahack-prod.s3.amazonaws.com/contest_icon/hackathon_2_500X250_1.jpg">
+    <meta name="twitter:site" content="@AnalyticsVidhya">
+    <meta name="twitter:title" content="Genpact Machine Learning Hackathon | Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact">
+    <meta name="twitter:description" content="&lt;p align=&quot;justify&quot;&gt;Genpact and Analyt...">
+    <meta name="twitter:creator" content="@AnalyticsVidhya">
+    <link href="Genpact%20Machine%20Learning%20Hackathon_files/simple-sidebar.css" rel="stylesheet">
+    <link href="Genpact%20Machine%20Learning%20Hackathon_files/contest.css" rel="stylesheet">
+
+    <style>
+      @font-face {
+          font-family: 'robotolight';
+          src: url(/static/fonts1/roboto/roboto-light-webfont.278289d58559.woff2) format('woff2'),
+               url(/static/fonts1/roboto/roboto-light-webfont.00169e836609.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+
+      @font-face {
+          font-family: 'robotoblack';
+          src: url(/static/fonts1/roboto/roboto-black-webfont.5db9dacc9bd3.woff2) format('woff2'),
+               url(/static/fonts1/roboto/roboto-black-webfont.3e2de1507a9d.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+
+      @font-face {
+          font-family: 'robotoregular';
+          src: url(/static/fonts1/roboto/roboto-regular-webfont.04337576d548.woff2) format('woff2'),
+               url(/static/fonts1/roboto/roboto-regular-webfont.4fbfb6e6e380.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+
+      @font-face {
+          font-family: 'robotobold';
+          src: url(/static/fonts1/roboto/roboto-bold-webfont.81ef57d5dcd0.woff2) format('woff2'),
+               url(/static/fonts1/roboto/roboto-bold-webfont.3352d8d9b9c3.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+
+      @font-face {
+          font-family: 'robotomedium';
+          src: url(/static/fonts1/roboto/roboto-medium-webfont.609a16addfb3.woff2) format('woff2'),
+               url(/static/fonts1/roboto/roboto-medium-webfont.9ee905ada562.woff) format('woff');
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      
+
+    </style>
+
+    <script src="Genpact%20Machine%20Learning%20Hackathon_files/jquery.js"></script>
+    <!-- Clevertap Config-->
+    
+    <script type="text/javascript">
+         var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[]};
+     clevertap.account.push({"id": "466-K97-594Z" });
+     (function () {
+         var wzrk = document.createElement('script');
+         wzrk.type = 'text/javascript';
+         wzrk.async = true;
+         wzrk.src = 'https://static.clevertap.com/js/a.js';
+         var s = document.getElementsByTagName('script')[0];
+         s.parentNode.insertBefore(wzrk, s);
+      })();
+    </script>
+<script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_003" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_004" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_002" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_010" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_005" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_006" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_008" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_009" rel="nofollow" async=""></script><script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a_007" rel="nofollow" async=""></script></head>
+
+<body class="page-fixed-header  pages  contest-playground " style="">
+
+<script>
+// clevertap
+function push_clevertap_event(event_name, event_properties={}){
+    var is_anonymous = "false";
+    if(is_anonymous === 'false'){
+    clevertap.profile.push({
+      "Site": {
+        "Identity": "42274"
+      }});
+    }
+    clevertap.event.push(event_name, event_properties);
+    // TODO: remove after initial release
+    console.log('clevertap event pushed: ', event_name, event_properties)
+};
+
+// Make <a> execute both `href` & `onclick`
+// https://stackoverflow.com/a/19250835/2422840
+// Another option: https://stackoverflow.com/a/14867603/2422840
+function push_clevertap_event_anchor(e, href, event_name, event_properties={}){
+    e.preventDefault();
+    push_clevertap_event(event_name, event_properties)
+    window.location = href;
+};
+</script>
+
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8F72KQ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<header class="header navbar navbar-default navbar-fixed-top">
+   <div class="header__data" id="headerData">
+        <a class="navbar-brand" id="navbar-brand" href="https://datahack.analyticsvidhya.com/?utm_source=main-logo" target="_blank">
+            <img class="logo" src="Genpact%20Machine%20Learning%20Hackathon_files/AV-color.svg" alt="Analytics Vidhya">
+        </a>
+        <a target="_blank" href="https://www.analyticsvidhya.com/blog/?utm_source=datahack-navbar&amp;utm_medium=web" class="header__data--link">Blog</a>
+        <a target="_blank" href="https://trainings.analyticsvidhya.com/?utm_source=datahack-navbar&amp;utm_medium=web" class="header__data--link">Learn</a>
+        <a target="_blank" href="https://discuss.analyticsvidhya.com/?utm_source=datahack-navbar&amp;utm_medium=web" class="header__data--link">Engage</a>
+        <a target="_blank" href="https://datahack.analyticsvidhya.com/?utm_source=datahack-navbar&amp;utm_medium=web" class="header__data--link">Compete</a>
+        <a target="_blank" href="https://www.analyticsvidhya.com/jobs/?utm_source=datahack-navbar&amp;utm_medium=web" class="header__data--link">Get Hired</a>
+        <a target="_blank" href="https://datahack.analyticsvidhya.com/contest/all/?utm_source=global-header" class="header__data--link all" style="color: #ee3d24;">View All Hackathons</a>
+
+
+       <!-- <a href="/oidc/authenticate/?next=/contest/genpact-machine-learning-hackathon/" class = "header__data--enroll">-->
+           <!--<img src="/static/images/mask.png" alt="search" class="search-icon">-->
+           <!-- <button>Login / Register</button>
+        </a>-->
+
+
+          
+          <ul class="nav navbar-nav navbar-right ">
+            
+
+              
+              <script src="Genpact%20Machine%20Learning%20Hackathon_files/notify.js" type="text/javascript"></script>
+              <script>
+        notify_badge_id='live_notify_badge';
+        notify_menu_id='live_notify_list';
+        notify_api_url='/notifications/api/unread_count/';
+        notify_fetch_count='5';
+        notify_unread_url='/notifications/unread/';
+        notify_mark_all_unread_url='/notifications/mark-all-as-read/';
+        notify_refresh_period=600000;
+    register_notifier(fill_notification_list);register_notifier(fill_notification_badge);</script>
+
+              <a role="button" class="notification" href="https://datahack.analyticsvidhya.com/notifications/unread">
+
+                  <div class="notification__icon">
+
+                    <svg version="1.1" viewBox="0 0 36 33" xmlns="http://www.w3.org/2000/svg"> <g fill="none" fill-rule="evenodd"> <g transform="translate(-1170 -28)"> <g transform="translate(1170 29)"> <path d="m12.047 31.247c1.6565 0 3.0118-1.3553 3.0118-3.0118h-6.0235c0 1.6565 1.3402 3.0118 3.0118 3.0118zm9.0353-9.0353v-7.5294c0-4.6231-2.4696-8.4932-6.7765-9.5172v-1.024c0-1.2499-1.0089-2.2588-2.2588-2.2588-1.2499 0-2.2588 1.0089-2.2588 2.2588v1.024c-4.3219 1.024-6.7765 4.8791-6.7765 9.5172v7.5294l-3.0118 3.0118v1.5059h24.094v-1.5059l-3.0118-3.0118z" fill="#4A4A4A"></path> </g> </g></g></svg>
+
+                  </div>
+                  <div class="notification__counter">
+
+                      <span id="notification_count"><span id="live_notify_badge" class="">58</span></span>
+
+                  </div>
+                </a>  <!-- .notification -->
+             
+             <li class="dropdown dropdown-hide">
+              <a href="#" class="dropdown-toggle header__data--profile" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              
+                <h1 class="user-name" style="margin:0px;background-color:#4285F4;padding-top:5px;color:white;height:35px;width:35px;border-radius:20px;font-size:25px;text-align:center;">A</h1>
+              
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a href="https://datahack.analyticsvidhya.com/user">
+                  <img src="Genpact%20Machine%20Learning%20Hackathon_files/profile.png"> Profile
+                </a></li>
+                
+                <li><a href="https://datahack.analyticsvidhya.com/user/update">
+                  <img src="Genpact%20Machine%20Learning%20Hackathon_files/edit_profile.png"> Edit Profile
+                </a></li>
+                <li><a href="https://datahack.analyticsvidhya.com/user/preferences/">
+                  <img src="Genpact%20Machine%20Learning%20Hackathon_files/prefrences.png"> Preferences
+                </a></li>
+                
+                <li><a href="javascript:{}" onclick="document.getElementById('logout-form').submit(); return false;">
+                  <img src="Genpact%20Machine%20Learning%20Hackathon_files/logout.png"> Logout
+                </a></li>
+              </ul>
+            </li>
+            <!-- </ul> -->
+            
+
+
+
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </ul></div>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("headerData");
+        if (x.className === "header__data") {
+            x.className += " responsive";
+        } else {
+            x.className = "header__data";
+        }
+    }
+</script>
+</header>
+
+<div class="workspace">
+  <!--
+<div data-module="CookieWarning" class="cookie-warning">
+    <div class="grid">
+        <span class = "cookie-icon">
+            <i class="fa fa-exclamation-triangle"></i>
+        </span>
+        <p class="cookie-message">
+            We use cookies on Analytics Vidhya websites to deliver our services, analyze web traffic, and improve your experience on the site. By using Analytics Vidhya, you agree to our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cookie-link" href="https://www.analyticsvidhya.com/privacy-policy/" target="_blank">Privacy Policy</a> and <a aria-label="learn more about cookies" role="button" tabindex="0" class="cookie-link" href="https://www.analyticsvidhya.com/terms/" target="_blank">Terms of Use</a>.</p>
+        <div class="cookie-compliance">
+            <a aria-label="dismiss cookie message" role="button" tabindex="0" class="btn cookie-btn cc-dismiss">OK</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$('.cc-dismiss').click(function() {
+    var data = {
+        "csrfmiddlewaretoken": "HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu"
+    };
+    $( ".cookie-warning" ).hide();
+    $.ajax({
+        url: "/user/cookies/accepted/",
+        dataType : 'json',
+        data: data,
+        type: "POST",
+        success: function(data) {
+        }
+    });
+
+});
+</script>
+
+
+-->
+  
+  
+  <button type="button" id="feedback-btn" class="btn btn-info vertical-right-aligned">
+    Feedback <span class="glyphicon glyphicon-bullhorn feedback-sticker" aria-hidden="true"></span>
+  </button>
+
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="lsb" id="left_side_bar" style="height: 5511px;">
+  <ul class="sidebar lsb__list" id="ll">
+    
+    
+      <li class="lsb__list--item">
+        
+        <a href="#registration_fees" class="lsb__list--link">
+              <i class="fa fa-inr lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">Registration Fee</span>
+          </a>
+      </li>
+      
+    
+      <li class="lsb__list--item">
+        
+        <a href="#problem_statement" class="lsb__list--link">
+              <i class="fa fa-question lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">Problem Statement</span>
+          </a>
+      </li>
+      
+    
+      <li class="lsb__list--item">
+        
+        <a href="#data_dictionary" class="lsb__list--link">
+              <i class="fa fa-database lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">Data</span>
+          </a>
+      </li>
+      
+    
+      <li class="lsb__list--item">
+        
+        <a href="#solution_checker" class="lsb__list--link">
+              <i class="fa fa-check lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">Solution Checker</span>
+          </a>
+      </li>
+      
+    
+      <li class="lsb__list--item">
+        
+        <a href="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/my-submissions" class="lsb__list--link">
+              <i class="fa fa-trophy lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">My Submissions</span>
+          </a>
+      </li>
+      
+    
+      <li class="lsb__list--item">
+        
+        <a href="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/lb" class="lsb__list--link">
+              <i class="fa fa-trophy lsb__list--icons"></i>
+              <span class="second_input hidden-sm hidden-xs lsb__list--title">LeaderBoard</span>
+          </a>
+      </li>
+      
+  </ul>
+</div>
+
+      <div class="section__contest--details" id="main_content">
+        <p>
+</p>
+        <img class="contest__cover" src="Genpact%20Machine%20Learning%20Hackathon_files/hackathon_2_1920X480-thumbnail-1200x1200-90.jpg" alt="Cover image for Genpact Machine Learning Hackathon"><br>
+        
+
+  
+     
+       <button type="button" class="btn btn-success btn-align-center" id="participate" disabled="disabled">Registered </button>
+     
+  
+
+<table class="contest__info__table table table-striped hidden-md hidden-lg" style="margin-top:20px;">
+    
+
+    <tbody><tr>
+        <td class="col-md-5"><b>Starts at </b></td>
+        <td><div class="localtime">Sat Dec 15 2018 00:00:00 GMT+0530 (India Standard Time)</div></td>
+    </tr>
+    <tr>
+        <td class="col-md-5"><b>Closes on </b></td>
+        <td><div class="localtime">Sun Dec 16 2018 23:59:00 GMT+0530 (India Standard Time)</div></td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-5"><b>Mode  </b></td>
+        <td>Online</td>
+    </tr>
+
+    <tr>
+        <td class="col-md-5"><b>Fee  </b></td>
+        <td> Free</td>
+    </tr>
+    
+    
+    <tr>
+        <td><b># Participants</b></td>
+        <td>3583</td>
+    </tr>
+    
+    <tr>
+        <td class="col-md-5" style="vertical-align:middle"><b>Prizes </b></td>
+        <td> <p>Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact </p></td>
+    </tr>
+    
+    
+</tbody></table>
+
+<table class="contest__info__table table table-striped hidden-sm hidden-xs">
+    <tbody><tr>
+        
+        <td class="col-md-2"><center><b>Starts at </b></center></td>
+        <td class="col-md-2"><center><b>Closes on </b></center></td>
+        
+
+        <td class="col-md-2"><center><b>Mode  </b></center></td>
+        <td class="col-md-2"><center><b>Fee  </b></center></td>
+        
+        <td class="col-md-2"><center><b>Participants</b></center></td>
+        
+    
+    <td class="col-md-2"><center><b>Prizes </b></center></td>
+    </tr>
+    <tr>
+        
+        <td><div class="localtime">Sat Dec 15 2018 00:00:00 GMT+0530 (India Standard Time)</div></td>
+        <td><div class="localtime">Sun Dec 16 2018 23:59:00 GMT+0530 (India Standard Time)</div></td>
+        
+        <td><center>Online</center></td>
+        <td><center>Free</center></td>
+        
+        <td><center>3583</center></td>
+        
+    
+        <td><center> <p>Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact </p></center></td>
+    </tr>
+    
+    
+</tbody></table>
+
+
+<center><h4><div class="countdown" id="countdown"><center>Contest ends in 1<small>days</small>: 11<small>hours</small>: 32<small>minutes</small>: 3<small>seconds</small></center></div></h4></center>
+
+        <div class="col-sm-12 col-xs-12 col-md-9 col-lg-9">
+        <input type="hidden" name="purpose" id="purpose" value="normal">
+        
+          
+            
+
+          
+            <h2 id="about-genpact-machine-learning-hackathon">About Genpact Machine Learning Hackathon</h2>
+
+<p align="justify">Genpact and Analytics Vidhya presents the “Genpact 
+Machine Learning Hackathon 2018”. A great opportunity to showcase your 
+machine learning and analytical abilities and compete with the best data
+ scientists out there.</p>
+
+<p style="line-height: 30%;">&nbsp;</p>
+
+<p align="justify">Apple MacBook, Apple iPad &amp; Apple Watch are up 
+for grabs for the top 3 winners! Best performers also get a chance to 
+get interviewed by Genpact for analytics and data science roles !!</p>
+
+<p style="line-height: 30%;">&nbsp;</p>
+
+<p align="justify">So what are you waiting for? Its time to show your talent and skillset and leave your mark !!!</p>
+
+<p style="line-height: 60%;">&nbsp;</p>
+
+<h2 id="who-can-apply">Who can apply?</h2>
+
+<p align="justify">If you love data, you should participate – statisticians, data scientists, analysts!</p>
+
+<p style="line-height: 60%;">&nbsp;</p>
+
+<h2 id="prizes">Prizes!</h2>
+
+<p>1<sup>st</sup>&nbsp;prize : Apple MacBook Pro</p>
+
+<p>2<sup>nd</sup>&nbsp;prize: Apple iPad</p>
+
+<p>3<sup>rd</sup>&nbsp;prize : Apple watch</p>
+
+<p style="line-height: 30%;">&nbsp;</p>
+
+<p align="justify">In addition, the highest scorers get a chance to interview with Genpact for exciting and enriching roles!</p>
+
+<p style="line-height: 60%;">&nbsp;</p>
+
+<h2 id="about-genpact">About Genpact:</h2>
+
+<p align="justify">We are a global professional services firm that makes
+ business transformation real. We drive digital-led innovation and 
+digitally-enabled intelligent operations for our clients, guided by our 
+experience running thousands of processes for hundreds of Global Fortune
+ 500 companies. From New York to New Delhi and more than 20 countries in
+ between,&nbsp;Genpact&nbsp;has the end-to-end expertise to connect 
+every dot, reimagine every process, and reinvent companies’ ways of 
+working. With a startup spirit and 80,000+ curious and courageous minds,
+ we have the expertise to go deep with the world’s biggest brands—and we
+ have fun doing it.</p>
+
+<p style="line-height: 30%;">&nbsp;</p>
+
+<p align="justify">Now, we’re calling all you rule-breakers and 
+risk-takers who see the world differently, and are bold enough to 
+reinvent it. Transformation happens here.</p>
+
+<p style="line-height: 60%;">&nbsp;</p>
+
+<p><strong>Dream in Digital. Dare in Reality.</strong></p>
+
+<h2 id="great-place-to-work">Great Place to work:</h2>
+
+<p><iframe src="Genpact%20Machine%20Learning%20Hackathon_files/sosFwEx_pDw.html" allowfullscreen="allowfullscreen" width="700" height="300" frameborder="0"></iframe></p>
+
+<p><iframe src="Genpact%20Machine%20Learning%20Hackathon_files/omqEU6xPZ6Y.html" allowfullscreen="allowfullscreen" width="700" height="300" frameborder="0"></iframe></p>
+          
+          
+          <h2 id="registration_fees">Registration Fee</h2>
+             Free
+          <!-- conditions starts here -->
+          
+    
+
+    
+           
+<hr id="problem_statement">
+<h2 id="problem-statement">Problem Statement</h2>
+
+  
+      <p></p><p style="font-weight: 400; text-align: justify;">Your 
+client is a meal delivery company which operates in multiple cities. 
+They have various fulfillment centers in these cities for dispatching 
+meal orders to their customers. The client wants you to help these 
+centers with demand forecasting for upcoming weeks so that these centers
+ will plan the stock of raw materials accordingly.</p>
+The replenishment of majority of raw materials is done on weekly basis 
+and since the raw material is perishable, the procurement planning is of
+ utmost importance. Secondly, staffing of the centers is also one area 
+wherein accurate demand forecasts are really helpful. Given the 
+following information, the task is to predict the demand for the next 10
+ weeks (Weeks: 146-155) for the center-meal combinations in the test 
+set:<p></p>
+<p>&nbsp;
+</p><ul>
+    <li style="text-align: justify;">Historical data of demand for a product-center combination (Weeks: 1 to 145)</li>
+    <li style="text-align: justify;">Product(Meal) features such as category, sub-category, current price and discount</li>
+    <li>Information for fulfillment center like center area, city information etc.</li>
+</ul>
+&nbsp;
+<h2 id="data-dictionary"><strong>Data Dictionary</strong></h2>
+&nbsp;
+<ol>
+    <li><b>Weekly Demand data (train.csv): </b>Contains the historical demand data for all centers, test.csv contains all the following features except the target variable</li>
+</ol>
+&nbsp;
+<table style="margin-left: auto; margin-right: auto;" width="0" cellspacing="5" cellpadding="10" border="1">
+<tbody>
+<tr>
+<td><strong>Variable</strong></td>
+<td><strong>Definition</strong></td>
+</tr>
+<tr>
+<td>id</td>
+<td>Unique ID</td>
+</tr>
+<tr>
+<td>week</td>
+<td>Week No</td>
+</tr>
+<tr>
+<td>center_id</td>
+<td>Unique ID for fulfillment center</td>
+</tr>
+<tr>
+<td>meal_id</td>
+<td>Unique ID for Meal</td>
+</tr>
+<tr>
+<td>checkout_price</td>
+<td>Final price including discount, taxes &amp; delivery charges</td>
+</tr>
+<tr>
+<td>base_price</td>
+<td>Base price of the meal</td>
+</tr>
+<tr>
+<td>emailer_for_promotion</td>
+<td>Emailer sent for promotion of meal</td>
+</tr>
+<tr>
+<td>homepage_featured</td>
+<td>Meal featured at homepage</td>
+</tr>
+<tr>
+<td>num_orders</td>
+<td>(Target) Orders Count</td>
+</tr>
+</tbody>
+</table>
+&nbsp;<p></p>
+<p>&nbsp;
+</p><ol start="2">
+    <li><strong> fulfilment_center_info.csv: </strong>Contains information for each fulfilment center</li>
+</ol>
+&nbsp;
+<table style="margin-left: auto; margin-right: auto;" width="272" cellspacing="5" cellpadding="10" border="1">
+<tbody>
+<tr>
+<td width="81"><strong>Variable</strong></td>
+<td width="191"><strong>Definition</strong></td>
+</tr>
+<tr>
+<td>center_id</td>
+<td>Unique ID for fulfillment center</td>
+</tr>
+<tr>
+<td>city_code</td>
+<td>Unique code for city</td>
+</tr>
+<tr>
+<td>region_code</td>
+<td>Unique code for region</td>
+</tr>
+<tr>
+<td>center_type</td>
+<td>Anonymized center type</td>
+</tr>
+<tr>
+<td>op_area</td>
+<td>Area of operation (in km^2)</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<ol start="3">
+    <li><strong> meal_info.csv: </strong>Contains information for each meal being served</li>
+</ol>
+&nbsp;
+<table style="margin-left: auto; margin-right: auto;" width="324" cellspacing="5" cellpadding="10" border="1">
+<tbody>
+<tr>
+<td width="59"><strong>Variable</strong></td>
+<td width="265"><strong>Definition</strong></td>
+</tr>
+<tr>
+<td>meal_id</td>
+<td>Unique ID for the meal</td>
+</tr>
+<tr>
+<td>category</td>
+<td>Type of meal (beverages/snacks/soups….)</td>
+</tr>
+<tr>
+<td>cuisine</td>
+<td>Meal cuisine (Indian/Italian/…)</td>
+</tr>
+</tbody>
+</table>
+&nbsp;
+<h2 id="m_8603290741404626416gmail-problem-statement">Evaluation Metric</h2>
+The evaluation metric for this competition is <strong><em>100*RMSLE</em></strong> where RMSLE is Root of <a href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_log_error.html">Mean Squared Logarithmic Error</a>&nbsp;across all entries in the test set.
+<h2 id="m_8603290741404626416gmail-problem-statement">Public and Private Split</h2>
+<p style="text-align: justify;">Test data is further randomly divided into Public (30%) and Private (70%) data.</p><p></p>
+<ul>
+    <li style="text-align: justify;">Your initial responses&nbsp;will be checked and scored on the Public data.</li>
+    <li style="text-align: justify;">The&nbsp;final rankings would be based on your private score which will be published once the competition is over.</li>
+</ul>
+
+<p>&nbsp;
+</p><h2 id="m_8603290741404626416gmail-problem-statement">Solution Checker</h2>
+<ol>
+    <li style="text-align: justify;">Adding comments is mandatory for the use of solution checker.</li>
+    <li style="text-align: justify;">Comments will help you to refer to a particular solution at a later point in time.</li>
+</ol>
+&nbsp;
+<h2 id="m_8603290741404626416gmail-problem-statement">Hackathon Rules</h2>
+<ol>
+    <li style="text-align: justify;">Setting final submission is mandatory.&nbsp;Without a final submission, your entry will not be considered.</li>
+    <li style="text-align: justify;">You are only allowed to make 10 submissions a day</li>
+    <li style="text-align: justify;">Use of external datasets is not allowed</li>
+    <li style="text-align: justify;">Code file is mandatory while 
+sending final submission. For GUI based tools, please upload a zip file 
+of snapshots of steps taken by you, else upload code file.</li>
+    <li style="text-align: justify;">The code file uploaded should be pertaining to your final submission.</li>
+    <li style="text-align: justify;">Use of id variable in any way is not allowed as part of the model/solution</li>
+</ol>
+&nbsp;
+<h2 id="m_8603290741404626416gmail-problem-statement">How to Make Submission</h2>
+<iframe src="Genpact%20Machine%20Learning%20Hackathon_files/jz3NR32lT5s.html" allowfullscreen="allowfullscreen" width="932" height="462" frameborder="0"></iframe>
+<h2 id="m_8603290741404626416gmail-problem-statement">How to Set Final Submission</h2>
+<iframe src="Genpact%20Machine%20Learning%20Hackathon_files/QiLs6dmwL2g.html" allowfullscreen="allowfullscreen" width="932" height="462" frameborder="0"></iframe> <p></p>
+  
+
+
+           <hr>
+
+
+<h2 id="data_dictionary">Data</h2>   
+<div style="height:20px"></div>
+<div>
+  <div class="col-md-2">
+    
+    <a class="test-file" href="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/download/test-file" target="blank" style="color:green;text-decoration:none;">
+       <i class="fa fa-download"></i>Test File
+    </a>
+    
+  </div>
+  <div class="col-md-2">
+    
+    <a class="train-file" href="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/download/train-file" target="blank" style="color:green;text-decoration:none;">
+      <i class="fa fa-download"></i>Train File
+    </a> 
+  </div>
+  <div class="col-md-4" style="">
+    
+    <a class="sample-submission" href="https://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon/download/sample-submission" style="color:green;text-decoration:none;" target="blank">
+       <i class="fa fa-download"></i>Sample Submissions
+    </a> 
+  </div>
+  <div class="col-md-4" style="">
+    
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+$(".test-file").click(function(e) {
+  var href = $(this).attr("href");
+  push_clevertap_event_anchor(e, href, "Test File", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+  });
+});
+$(".train-file").click(function(e) {
+  var href = $(this).attr("href");
+  push_clevertap_event_anchor(e, href, "Train File", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+  });
+});
+$(".sample-submission").click(function(e) {
+  var href = $(this).attr("href");
+  push_clevertap_event_anchor(e, href, "Sample Submission", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+  });
+});
+
+</script>
+
+
+           
+<hr>
+
+<h2 id="solution_checker" style="margin-top:30px">Solution Checker</h2>
+
+  
+  <div class="row" style="margin-top:30px;">
+    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal" id="form1">
+        <input type="hidden" name="csrfmiddlewaretoken" value="HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu">
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-sm-4 col-md-3 control-label">Code File </label>
+            <div class="col-sm-8">
+                <input type="file" name="code_file" class="form-control" id="code_file1" required="">
+            </div>
+        </div>
+        <div class="form-group">
+           <label for="exampleInputEmail1" class="col-sm-4 col-md-3 control-label">Solution File*<br>(<strong>.csv only</strong>)</label>
+           <div class="col-sm-8">
+               <input type="file" accept=".csv" name="solution_file" class="form-control" id="solution_file1" required="">
+           </div>
+       </div>
+       <div class="form-group">
+           <label for="exampleInputEmail1" class="col-sm-4 col-md-3 control-label">Solution Description<br> (max : 180 chars)*</label>
+           <div class="col-sm-8">
+               <input type="text" name="message" class="form-control" placeholder="Solution Description (for your interest)" maxlength="90" id="message1">
+           </div>
+       </div>
+       
+       <div class="form-group">
+           <label for="exampleInputEmail1" class="col-sm-4 col-md-3 control-label"> Do you want to show your code on leaderboard?*</label>
+           <input id="show_code_lb_query" value="true" hidden="true">
+           <div class="col-sm-8">
+               Yes <input class="code_link" type="radio" onclick="link_display()" value="True" name="code_link_display">
+               No <input class="code_link" type="radio" onclick="link_display()" value="False" name="code_link_display">
+           </div>
+       </div>
+       
+       <button type="button" id="sub1" class="btn btn-primary col-md-6 col-md-offset-3 col-lg-offset-3 col-lg-6 col-sm-12 col-xs-12" disabled="disabled">Add Solution</button>
+    </form>
+  </div>
+
+  
+    <p>You have made <b>0</b> submissions out of <b>10 allowed submissions for the day.</b></p><b>
+  
+
+
+
+
+<script type="text/javascript" charset="utf-8" async="" defer="defer">
+var show_button_disabled = document.getElementById('show_code_lb_query').value;
+if (show_button_disabled=='false'){
+document.getElementById("sub1").disabled = false;
+}
+else{
+  document.getElementById("sub1").disabled = true;
+}
+
+function link_display() {
+  var radio_button = document.getElementsByName('code_link_display');
+  document.getElementById("sub1").disabled = false;
+};
+
+</script>
+
+
+    
+
+
+
+
+<script type="text/javascript">
+$("#join-skilltest-btn").click(function(e){
+  var href = $(this).attr("href");
+  push_clevertap_event_anchor(e, href, "Join MCQ", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+    });
+});
+</script>
+
+
+          <!-- conditions ends here -->
+          
+          <!-- Condition for AMA -->
+          
+
+        <div style="height:100px;"></div>
+        </b></div><b>
+        <div class="col-sm-12 col-xs-12 col-md-2 col-lg-2">
+             
+
+<div style="margin-top:20px">
+  
+  
+  <button type="button" class="btn col-md-12 btn-primary" id="slack_invite">Join Slack Live Chat</button>
+  <p>
+    <!--SocialShare-->
+    
+  </p><ul class="rrssb-buttons clearfix rrssb-1" style="width:50%;">
+    <li class="rrssb-facebook" style="width: 50%;" data-initwidth="50">
+        <a href="javascript:window.location=%22http://www.facebook.com/sharer.php?s=100&amp;utm_source=fb_share&amp;utm_medium=dh_social&amp;p[url]=%22+encodeURIComponent('http://datahack.analyticsvidhya.com/contest/genpact-machine-learning-hackathon')+%22&amp;p[title]=%22+encodeURIComponent('jhgfdsxzgh')+%22&amp;p[summary]=%22+encodeURIComponent('Hackathon in Analytics Vidhya')+%22&amp;p[quote]=%22+encodeURIComponent('swwwwwwswsws')" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'SocialShare', 'eventAction': 'clicked', 'eventLabel': 'Facebook'});" title="Share on Facebook..." class="popup">
+          <span class="rrssb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29"><path d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"></path></svg>
+          </span>
+        </a>
+    </li>
+    <li class="rrssb-twitter" style="width: 50%;" data-initwidth="50">
+        <a href="https://twitter.com/share?utm_source=twitter_share&amp;utm_medium=dh_social&amp;url=http://datahack.analyticsvidhya.com+/contest/genpact-machine-learning-hackathon/&amp;text=Hey!%20I%20am%20participating%20in%20an%20exciting%20problem%20by%20@AnalyticsVidhya%20Genpact%20Machine%20Learning%20Hackathon%20Compete%20and%20Learn.%20#Datahack" onclick="ga('send', {'hitType': 'event', 'eventCategory': 'SocialShare', 'eventAction': 'clicked', 'eventLabel': 'Twitter'});" class="popup">
+          <span class="rrssb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"></path></svg>
+          </span>
+          <!-- <span class="rrssb-text">twitter</span> -->
+        </a>
+    </li>
+    <!-- li class="rrssb-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://datahack.analyticsvidhya.com&title=Genpact Machine Learning Hackathon&source=" class="popup">
+          <span class="rrssb-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"><path d="M25.424 15.887v8.447h-4.896v-7.882c0-1.98-.71-3.33-2.48-3.33-1.354 0-2.158.91-2.514 1.802-.13.315-.162.753-.162 1.194v8.216h-4.9s.067-13.35 0-14.73h4.9v2.087c-.01.017-.023.033-.033.05h.032v-.05c.65-1.002 1.812-2.435 4.414-2.435 3.222 0 5.638 2.106 5.638 6.632zM5.348 2.5c-1.676 0-2.772 1.093-2.772 2.54 0 1.42 1.066 2.538 2.717 2.546h.032c1.71 0 2.77-1.132 2.77-2.546C8.056 3.593 7.02 2.5 5.344 2.5h.005zm-2.48 21.834h4.896V9.604H2.867v14.73z"/></svg>
+          </span>
+          <span class="rrssb-text">linkedin</span>
+        </a>
+    </li -->
+  </ul>
+  <p></p>
+  
+  <a href="https://trainings.analyticsvidhya.com/courses/course-v1:AnalyticsVidhya+CVDL101+CVDL101_T1/about?utm_source=CV101datahackbanner"><img class="img-responsive img-vol" src="Genpact%20Machine%20Learning%20Hackathon_files/330x570_1.jpg" alt="Deep Learning"></a>
+</div>
+
+        </div>
+      </b></div><b>
+        <a href="#" class="back-to-top fa fa-arrow-up"></a>
+    </b></div><b>
+  </b></div><b>
+ 
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#d43f3a;">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title" id="modal-header" style="color:white;">Error </h4>
+        </div>
+        <div class="modal-body">
+          <p id="modal-body" style="color:black;"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="success_modal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#449d44;">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title" id="modal-header" style="color:white;">Success </h4>
+        </div>
+        <div class="modal-body">
+          <p id="modal-body" style="color:black;">Payment Received.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#449d44;">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title" id="modal-header1" style="color:white;">New Data Added</h4>
+        </div>
+        <div class="modal-body">
+          <p id="modal-body1" style="color:black;">Please check the data set. New Data has been added along with the previous one. New file name : Alcohol consumption.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for warning anonymous users -->
+  <div class="modal fade" id="warningModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#449d44;">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title" id="warning-modal-header" style="color:white;">New Data Added</h4>
+        </div>
+        <div class="modal-body">
+          <p id="warning-modal-body" style="color:black;">Please check the data set. New Data has been added along with the previous one. New file name : Alcohol consumption.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="slack_invite">Proceed</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal 3 -->
+  <div class="modal fade" id="myModal3" role="dialog" style="width:80%;margin-left:10%">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#449d44;">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title" id="modal-header" style="color:white;"><center>Set Final Submissions</center></h4>
+        </div>
+        <div class="modal-body" style="height:400px;overflow-y : auto;width:100%">
+           <p id="final_submission_set_success"></p>
+           <form action="" method="post" id="form-submissions">
+               <input type="hidden" name="csrfmiddlewaretoken" value="HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu">
+               <table class="table-striped" id="" style="padding-left:20px;width:100%;">
+                 <tbody><tr style="height:40px;">
+                    
+                     <th style="" class="col-sm-5">Answer Commit Message</th>
+                     <th style="" class="col-sm-2">Score</th>
+                     <th style="" class="col-sm-3 ">Time of Submission</th>
+                     <th style="" class="col-sm-2">Code File</th>
+                     <th style="padding-right:10px;">Select</th>
+                     
+                </tr>
+               </tbody></table>
+               <table class="table-striped" id="data" style="padding-left:20px;width:100%;">
+               </table>
+               <button type="button" class="btn btn-primary col-sm-6 col-sm-offset-3" style="margin-top:30px;" id="submit">Set final Submission</button><table id="final_1">
+                 
+               </table>
+               <button type="button" class="btn btn-primary col-sm-6 col-sm-offset-3" style="margin-top:30px;" id="submit_2">Set Submissions to check private score</button><table id="final_2">
+                 
+               </table>
+           </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- similar contest -->
+ <div class="modal fade " id="similarcontest" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#449d44;">
+          <button type="button" class="close" data-dismiss="modal" onclick="page_reload()">×</button>
+          <h4 class="modal-title" id="modal-header" style="color:white;">Thank you for registering and here are more similar contests</h4>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" style="margin: auto;display: block;" onclick="prefernce_selector()" data-dismiss="modal">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- similar contest ends -->
+
+
+
+
+
+
+ <div class="container">
+  <div class="row">
+  
+  </div>
+</div>
+</b></div><b>
+
+
+
+
+    <script type="text/javascript">
+        // using jQuery
+        function getCookie(name) {
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        var csrftoken = getCookie('csrftoken');
+        function csrfSafeMethod(method) {
+            // these HTTP methods do not require CSRF protection
+            return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+        }
+        $.ajaxSetup({
+            beforeSend: function(xhr, settings) {
+                if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                    console.log(csrftoken);
+                    xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                }
+            }
+        });
+    </script>
+
+
+
+
+    <script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/feedback.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $.feedback({
+                ajaxURL: "/tellme/post_feedback/",
+                html2canvasURL: "/static/tellme/html2canvas.min.4e89da462f4b.js",
+                feedbackButton: "#feedback-btn",
+                initButtonText: "\u000ASend feedback",
+                postHTML: false,
+                tpl: {
+                    description: "\u000A\u003Cdiv id\u003D\u0022feedback\u002Dwelcome\u0022 data\u002Dhtml2canvas\u002Dignore\u003D\u0022true\u0022\u003E\u000A  \u003Cdiv class\u003D\u0022feedback\u002Dlogo\u0022\u003EFeedback\u003C/div\u003E\u000A  \u003Cp\u003EWe believe in making Analytics Vidhya the best experience possible for Data Science enthusiasts. Help us by providing valuable Feedback.\u003C/p\u003E\u000A  \u003Cp\u003ENote: On clicking the Submit button, we will automatically receive the screenshot of the screen, helping us understand your query better.\u003C/p\u003E\u000A  \u003Ctextarea id\u003D\u0022feedback\u002Dnote\u002Dtmp\u0022\u003E\u003C/textarea\u003E\u000A  \u003Cbutton id\u003D\u0022feedback\u002Dsubmit\u0022 class\u003D\u0022feedback\u002Dsubmit\u002Dbtn feedback\u002Dbtn\u002Dblue\u0022\u003ESubmit\u003C/button\u003E\u000A  \u003Cdiv id\u003D\u0022feedback\u002Dwelcome\u002Derror\u0022\u003EPlease enter a description.\u003C/div\u003E\u000A  \u003Cdiv class\u003D\u0022feedback\u002Dwizard\u002Dclose\u0022\u003E\u003C/div\u003E\u000A\u003C/div\u003E\u000A",
+    				submitSuccess:"\u000A\u003Cdiv id\u003D\u0022feedback\u002Dsubmit\u002Dsuccess\u0022\u003E\u000A  \u003Cdiv class\u003D\u0022feedback\u002Dlogo\u0022\u003EFeedback\u003C/div\u003E\u000A  \u003Cp\u003EThanks for your valuable feedback. It will help us make the platform bug\u002Dfree and more useful for you and other users in the community.\u003C/p\u003E\u000A  \u003Cbutton class\u003D\u0022feedback\u002Dclose\u002Dbtn feedback\u002Dbtn\u002Dblue\u0022\u003EOK\u003C/button\u003E\u000A  \u003Cdiv class\u003D\u0022feedback\u002Dwizard\u002Dclose\u0022\u003E\u003C/div\u003E\u000A\u003C/div\u003E\u000A",
+    				submitError: "\u000A\u003Cdiv id\u003D\u0022feedback\u002Dsubmit\u002Derror\u0022\u003E\u000A    \u003Cdiv class\u003D\u0022feedback\u002Dlogo\u0022\u003EFeedback\u003C/div\u003E\u000A    \u003Cp\u003ESadly an error occurred while sending your feedback. Please try again.\u003C/p\u003E\u000A    \u003Cbutton class\u003D\u0022feedback\u002Dclose\u002Dbtn feedback\u002Dbtn\u002Dblue\u0022\u003EOK\u003C/button\u003E\u000A    \u003Cdiv class\u003D\u0022feedback\u002Dwizard\u002Dclose\u0022\u003E\u003C/div\u003E\u000A\u003C/div\u003E"
+                },
+                initialBox: true
+            });
+        });
+    </script>
+
+
+<footer class="site-footer">
+    <div class="section-one hidden-xs">
+        <div class="footer__logo">
+           <a href="#"> <img src="Genpact%20Machine%20Learning%20Hackathon_files/AV-white.png" alt="Analytics Vidhya"></a>
+        </div>
+        <div class="footer__about">
+            <h5 class="footer_heading ">Analytics Vidhya</h5>
+            <ul class="footer-links ">
+                <li><a target="_blank" href="http://www.analyticsvidhya.com/about-me/">About Us</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/about-me/team/">Our Team</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/career-analytics-vidhya/">Career</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/contact/">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer__data">
+            <h5 class="footer_heading">Data Scientists</h5>
+            <ul class="footer-links">
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/blog">Blog</a></li>
+                <li><a target="_blank" href="https://datahack.analyticsvidhya.com/">Hackathon</a></li>
+                <li><a target="_blank" href="https://discuss.analyticsvidhya.com/">Discussions</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/jobs/">Apply Jobs</a></li>
+                <li><a target="_blank" href="https://trainings.analyticsvidhya.com/">Trainings</a></li>
+            </ul>
+        </div>
+        <div class="footer__company">
+            <h5 class="footer_heading">Companies</h5>
+            <ul class="footer-links">
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/corporate/">Post Jobs</a></li>
+                <li><a target="_blank" href="https://trainings.analyticsvidhya.com/">Trainings</a></li>
+                <li><a target="_blank" href="https://datahack.analyticsvidhya.com/">Hiring Hackathon</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/contact/">Advertising</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-one hidden-md hidden-lg hidden-sm section-one-dropdown">
+        <div class="footer__logo">
+            <img src="Genpact%20Machine%20Learning%20Hackathon_files/AV-white.png" alt="Analytics Vidhya">
+        </div>
+
+        <div class="footer__about dropdown display ">
+            <h5 class="footer_heading dropdown-btn">ANALYTICS VIDHYA
+                <span class="caret"></span>
+            </h5>
+            <ul class="footer-links dropdown-display">
+                <li><a target="_blank" href="http://www.analyticsvidhya.com/about-me/">About Us</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/about-me/team/">Our Team</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/career-analytics-vidhya/">Career</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/contact/">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer__data dropdown display">
+            <h5 class="footer_heading dropdown-btn">DATA SCIENTISTS<span class="caret"></span></h5>
+            <ul class="footer-links dropdown-display">
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/blog">Blog</a></li>
+                <li><a target="_blank" href="https://datahack.analyticsvidhya.com/">Hackathon</a></li>
+                <li><a target="_blank" href="https://discuss.analyticsvidhya.com/">Discussions</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/jobs/">Apply Jobs</a></li>
+                <li><a target="_blank" href="https://trainings.analyticsvidhya.com/">Trainings</a></li>
+            </ul>
+        </div>
+        <div class="footer__company dropdown display">
+            <h5 class="footer_heading dropdown-btn" data-toggle="dropdown">COMPANIES<span class="caret"></span></h5>
+            <ul class="footer-links dropdown-display">
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/corporate/">Post Jobs</a></li>
+                <li><a target="_blank" href="https://trainings.analyticsvidhya.com/">Trainings</a></li>
+                <li><a target="_blank" href="https://datahack.analyticsvidhya.com/">Hiring Hackathon</a></li>
+                <li><a target="_blank" href="https://www.analyticsvidhya.com/contact/">Advertising</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <hr class="Breakline1">
+    <div class="section-two">
+        <div class="footer__social">
+            <h5 class="footer_heading visit">Visit us</h5>
+            <ul class="footer-links-social">
+                <li><a target="_blank" href="http://www.facebook.com/Analyticsvidhya"><i class="fa fa-facebook"></i></a></li>
+                <li><a target="_blank" href="https://www.linkedin.com/company/analytics-vidhya/?originalSubdomain=in"><i class="fa fa-linkedin"></i></a></li>
+                <li><a target="_blank" href="http://www.twitter.com/analyticsvidhya"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer__app">
+            <h5 class="footer_heading app-heading">Download App</h5>
+            <a href="https://play.google.com/store/apps/details?id=com.analyticsvidhya.android"><img src="Genpact%20Machine%20Learning%20Hackathon_files/app-download.png" alt="Analytics Vidhya"></a>
+        </div>
+        <div class="footer__signup">
+            <h5 class="footer_heading">Sign up to our Newsletter</h5>
+            <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="_blank">
+                <input name="uri" type="hidden" value="analyticsvidhya">
+                <input name="loc" type="hidden" value="en_US">
+                <input type="text" name="signup" placeholder="Your email address">
+                <input type="submit" value="Submit" hidden="true">
+                <span><i class="right-arrow"></i></span>
+            </form>
+
+        </div>
+    </div>
+    <hr class="Breakline2">
+    <div class="section-three">
+        <div class="copyrights">© Copyright 2013-2018 Analytics Vidhya.</div>
+        <div class="policy"><a target="_blank" href="https://www.analyticsvidhya.com/privacy-policy/">Privacy Policy</a> | <a target="_blank" href="https://www.analyticsvidhya.com/terms/">Terms of Use</a> | <a target="_blank" href="https://www.analyticsvidhya.com/refund-policy/">Refund Policy</a></div>
+
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+    </script>
+</footer>
+
+
+<form id="logout-form" action="/oidc/logout/" method="post"><input type="hidden" name="csrfmiddlewaretoken" value="HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu">
+</form>
+    <script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/3b40268e485a.js"></script>
+
+    <script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/a488e1fb68b9.js"></script>
+
+    
+<script type="text/javascript" src="Genpact%20Machine%20Learning%20Hackathon_files/generate_left_side_bar.js"></script>
+<script>
+$(document).ready(function(){
+var height = $("#main_content").height();
+$("#left_side_bar").height(height);
+if($("#terms_and_cond")){
+  $("#terms_and_cond").modal("show");
+}
+
+$('.register').click(function(e) {  // ajax request to register
+  push_clevertap_event("Register", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+    });
+  var slug = $(".register").data("slug");
+  var similarcontest = document.getElementsByName('preference');
+  $.ajax({
+       type : 'GET',
+       url : '/contest/'+slug+'/participate',
+       dataType : 'json',
+       success : function(data){
+          if (data["error"]){
+            $("#similarcontest").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html(data["message"]);
+            $('#myModal').modal('show');
+         }
+         else{
+
+          if (similarcontest.length != 0){
+            $('#similarcontest .modal-dialog').css('width', $(window).width() * 0.8);
+            $("#similarcontest").modal("show");
+          }
+          else{
+            // call payment module
+            var profile_complete = (data["profile_complete"] ? false : true);
+            if (0){
+               $.ajax({
+                     type : 'GET',
+                     url : '/contest/'+slug+'/checkout/',
+                     dataType : 'json',
+                     success : function(data){
+                      window.location.href = data['pay_url'] ;
+                      }
+                     });
+
+            }
+            else if (purpose == 'hiring' && profile_complete){
+              window.location.href = "/contest/genpact-machine-learning-hackathon/add_personal_details" ;
+            }
+            else {
+              window.location.reload();
+            }
+          }
+        }
+         }
+     });
+});
+
+});
+
+function page_reload(argument) {
+  window.location.reload();
+  // body...
+}
+
+function prefernce_selector(){
+  var checkboxes = document.getElementsByName('preference');
+  var slugs = [];
+  for (var i=0; i<checkboxes.length; i++) {
+     // And stick the checked ones onto an array...
+     if (checkboxes[i].checked) {
+        slugs.push(checkboxes[i].value);
+     }
+  }
+  var slug = {"slugs":slugs,
+                "csrfmiddlewaretoken":"HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu"
+                };
+
+  $.ajax({
+   type : 'POST',
+   url : '/contest/bulkparticipate/',
+   dataType : 'json',
+   data : slug,
+   success : function(data){
+    if (data["error"]){
+            $("#similarcontest").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html("Please complete your profile.");
+            $('#myModal').modal('show');
+         }
+        else{
+          if(data["not_registered"].length != 0){
+          $("#similarcontest").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html("Please try to register \
+                                   again after updating your profile \
+                                   for "+data["not_registered"]);
+            $('#myModal').modal('show');
+          }
+          else{
+          window.location.reload();
+        }
+          }
+   }
+ });
+}
+var purpose = $('#purpose').attr('value');
+var sp_purpose = ['visualize','excel'];
+var cd_purpose = ['workshop','normal','learnup','practice','case_study','mcq','hiring'];
+$("#fetch_final").click(function(){
+    $("#final_1").css("display","block");
+    $("#submit").css("display","block");
+    $("#final_2").css("display","none");
+    $("#submit_2").css("display","none");
+    fetch_final();
+});
+var od_purpose = ['normal','learnup','practice','hiring'];
+var ot_purpose = ['workshop','visualize','excel','mcq','case_study','blogathon','ama'];
+
+function fetch_final(){
+    console.log("fetch final ");
+    $("#myModal3 .modal-dialog").css("height",$(window).height()*0.7);
+    $("#myModal3 .modal-dialog").css("width",$(window).width()*0.7);
+    $.ajax({
+       type : 'GET',
+       url : '/contest/genpact-machine-learning-hackathon/get',
+       dataType : 'json',
+       success : function(data){
+         if(data["error"] == "true")
+         {
+             console.log(data);
+         }
+         else{
+           $("#data").html("");
+           console.log(data);
+           if (data["submissions"]){
+           for(i=0;i<data["submissions"].length;i++)
+           {
+             if ($.inArray(purpose, ot_purpose ) > -1){
+               if(data["submissions"][i][3]) 
+                  {               
+                    $("#data").append("<tr style = 'height:40px;'><td class = 'col-sm-6' style = 'padding-right:30px'>" + data["submissions"][i][0] + "</td><td class = 'col-sm-2'>" + Math.round(data["submissions"][i][1] *100000)/100000+ "</td><td class = 'col-sm-4'>" + data["submissions"][i][2] + "</td><td class = 'col-sm-2'> <input type = 'radio' class = 'radio_buttons' checked value = '" + data["submissions"][i][4] +"' name = 'final1'></td></tr>");
+                  }
+                   
+                  else {               
+                    $("#data").append("<tr style = 'height:40px;'><td class = 'col-sm-6'>" + data["submissions"][i][0] + "</td><td class = 'col-sm-2'>" + Math.round(data["submissions"][i][1] *100000)/100000+ "</td><td class = 'col-sm-4'>" + data["submissions"][i][2]+ "</td><td class = 'col-sm-2'><input type = 'radio' value = '"+ data['submissions'][i][4] + "' class = 'radio_buttons' name = 'final1'></td>></tr>");
+                  }
+              }
+               
+              else {
+                  if (data["submissions"][i][6] && ($.inArray(purpose, od_purpose ) > -1)){
+                        if(data["submissions"][i][3]) 
+                        {               
+                          $("#data").append("<tr style = 'height:40px;'><td class = 'col-sm-5' style = 'padding-right:30px'>" + data["submissions"][i][0] + "</td><td class = 'col-sm-2'>" + Math.round(data["submissions"][i][1] *100000)/100000+ "</td><td class = 'col-sm-3'>" + data["submissions"][i][2] + "</td><td class = 'col-sm-3'>&#10004;</td><td class = 'col-sm-1'><input type = 'radio' class = 'radio_buttons'  checked value = '"+ data['submissions'][i][4] +"' name = 'final1'></td></tr>");
+                        }
+                         
+                        else
+                        {               
+                          $("#data").append("<tr style = 'height:40px;'><td class = 'col-sm-5'>" + data["submissions"][i][0] + "</td><td class = 'col-sm-2'>" + Math.round(data["submissions"][i][1] *100000)/100000+ "</td><td class = 'col-sm-3'>" + data["submissions"][i][2]+ "</td><td class = 'col-sm-3'>&#10004;</td><td class = 'col-sm-1'><input type = 'radio' value = '"+ data['submissions'][i][4] + "' class = 'radio_buttons' name = 'final1'></td>></tr>");
+                        }
+                    }
+                    else {
+                          $("#data").append("<tr style = 'height:40px;'><td class = 'col-sm-5'>" + data["submissions"][i][0] + "</td><td class = 'col-sm-2'>" + Math.round(data["submissions"][i][1] *100000)/100000+ "</td><td class = 'col-sm-3'>" + data["submissions"][i][2] + "</td><td class = 'col-sm-3' >&#10008;</td><td class = 'col-sm-1'><input type = 'radio' value = '"+ data['submissions'][i][4] + "' class = 'radio_buttons' name = 'final1' disabled></td></tr>");
+                      }
+              }
+           }
+           }  
+               $("#myModal3").modal("show");
+         }
+       },
+       error  : function(data){
+          alert("error occured");
+       }
+    });
+}
+
+
+if ($.inArray(purpose, cd_purpose ) > -1)
+{
+    $(document).ready(function(){
+  $.ajax({
+    type: "GET",
+    url: "./countdowns/",
+    success: function(result){
+
+      obj = JSON.parse(result)
+      if (obj.time_to_start > 0){
+        var time_remaining = obj.time_to_start;
+        message = "Contest starts in ";
+      }
+      else if (obj.time_to_end > 0){
+        message = "Contest ends in ";
+        var time_remaining = obj.time_to_end;
+      }
+
+      if (time_remaining ){
+      window.setInterval(function(){
+
+          time_remaining =  time_remaining - 1
+          if (time_remaining==0){
+            location.reload(true);
+          }
+          days = (Math.floor(time_remaining/86400));
+          hours = (Math.floor((time_remaining-days*86400)/3600));
+          minutes = (Math.floor((time_remaining % 3600)/60));
+          seconds = (Math.floor(time_remaining%60));
+          if (days < 1)
+          {
+            message_text = message + hours + "<small>hours</small>: " + minutes + "<small>minutes</small>: " + seconds  + "<small>seconds</small>";
+          }
+          else{
+            message_text = message + days + "<small>days</small>: "  + hours + "<small>hours</small>: " + minutes + "<small>minutes</small>: " + seconds  + "<small>seconds</small>";
+          }
+          $("#countdown").html( "<center>" + message_text + "</center>" );
+      }, 1000);
+      }
+
+    }
+  });
+});
+
+    }
+
+if ($.inArray(purpose, sp_purpose ) > -1)
+{
+    $("#submit").click(function(){
+  var data = new FormData($('#form-submissions').get(0));
+  $.ajax({
+      url: '/problem/genpact-machine-learning-hackathon/update-final-solution/',
+      type: 'POST',
+      data: data,
+      cache: false,
+      processData: false,
+      contentType: false,
+      success: function(data) {
+         if(data["error"] == "true")
+         {
+            $("#myModal3").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html(data["message"]);
+            $('#myModal').modal('show');
+         }
+         else{
+             $("#myModal3").modal("hide");
+             $("#modal-header1").html("Success");
+             $("#modal-body1").html("Your Final Sumbission has been set successfully.");
+             $('#myModal1').modal('show');
+         }
+      },
+      error : function(data){
+            $("#myModal3").modal("hide");
+            $("#modal-body").html("Unable to connect to backend");
+            $('#myModal').modal('show');
+      }
+  });
+});
+
+$("#submit_2").click(function(){
+  var data = new FormData($('#form-submissions').get(0));
+  $.ajax({
+      url: '/problem/genpact-machine-learning-hackathon/update-multiple-final-solution/',
+      type: 'POST',
+      data: data,
+      cache: false,
+      processData: false,
+      contentType: false,
+      success: function(data) {
+         if(data["error"] == "true")
+         {
+            $("#myModal3").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html(data["message"]);
+            $('#myModal').modal('show');
+         }
+         else{
+            $("#myModal3").modal("hide");
+            $("#modal-header1").html("Success");
+            $("#modal-body1").html(data["message"]);
+            $("#myModal1").modal('show');         
+         }
+      },
+      error : function(data){
+            $("#myModal3").modal("hide");
+            $("#modal-body").html("Some error occured");
+            $('#myModal').modal('show');
+      }
+  });
+});
+
+    }
+else{
+  $("#selection_done").click(function(){
+  var message = "Are you sure you want to set this submission as your final submission. If yes, then you'll have to add your code file for this submission. ";
+  var user_confirmation  = confirm(message);
+  if (user_confirmation)
+  {
+     add_code_file_form();
+  }
+
+});
+$("#submit").click(function(){
+  var data = new FormData($('#form-submissions').get(0));
+  $.ajax({
+      url: '/problem/genpact-machine-learning-hackathon/update-final-solution/',
+      type: 'POST',
+      data: data,
+      cache: false,
+      processData: false,
+      contentType: false,
+      success: function(data) {
+         if(data["error"] == "true")
+         {
+            $("#myModal3").modal("hide");
+            $("#modal-header1").html("Error");
+            $("#modal-body").html(data["message"]);
+            $('#myModal').modal('show');
+         }
+         else{
+             <!-- fetch_final_for_multiple_selections(); -->
+             $("#myModal3").modal("hide");
+             $("#modal-header1").html("Success");
+             $("#modal-body1").html(data["message"]);
+             $('#myModal1').modal('show');
+         }
+      },
+      error : function(data){
+            $("#myModal3").modal("hide");
+            $("#modal-body").html("Unable to connect to backend");
+            $('#myModal').modal('show');
+      }
+  });
+});
+
+function add_code_file_form(){
+    $("#myModal3 .modal-dialog").css("height",$(window).height()*0.7);
+    $("#myModal3 .modal-dialog").css("width",$(window).width()*0.7);
+}
+
+}
+
+ $('a[href*=#]:not([href=#])').click(function() {
+     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+       var target = $(this.hash);
+       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+       if (target.length) {
+         $('html,body').animate({
+           scrollTop: target.offset().top - 50
+         }, 1000);
+         return false;
+       }
+     }
+ });
+   var names;
+   $("#sub1").click(function(){
+       file_checker("url1");
+   });
+
+    $("#sub2").click(function(){
+         file_checker("url2");
+     });
+
+   $(document).keypress(function(e) {
+       if(e.which == 13) {
+          e.preventDefault();
+          file_checker();
+       }
+   });
+
+   function file_checker(url_name) {
+       push_clevertap_event("Add Solution", {
+          "Title": "genpact-machine-learning-hackathon",
+          "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+          });
+
+       var solution_filename = $("#solution_file1").val();
+       var commit_message = $("#message1").val();
+       var solution_file_ext = $('#solution_file1').val().split('.').pop().toLowerCase();
+
+       if(solution_filename == "") {
+            $("#modal-body").html("Solution File is required. Please upload solution File");
+            $('#myModal').modal('show');
+       }
+       else {
+           
+              if($.inArray('.' + solution_file_ext, ['.csv']) == -1) {
+                   $("#modal-body").html("Invalid Solution File . Please upload a valid solution File. <br/>Only " + ".csv" + " files are allowed");
+                   $('#myModal').modal('show');
+                   return false ;
+              }
+           
+
+      if (commit_message == "")
+       {
+            $("#modal-body").html("Message is required. Please add a message to your Solution");
+            $('#myModal').modal('show');
+       }
+       else
+       {
+            var a = "<img src = 'https://datahack.analyticsvidhya.com/media/profile_photos/oie_91149170D2m4jGB.gif' class = '' style = 'width:250px;margin-left:30%'><div class='progress progress-striped active col-md-12 col-sm-12 col-xs-12 col-lg-12'><div class='progress-bar' role='progressbar' aria-valuenow='0' aria-valuemin='0' aria-valuemax='100'></div></div>"
+            $("#modal-body1").html(a)
+            $("#modal-header1").html("Uploading");
+            $('#myModal1').modal('show');
+            upload(url_name);
+       }
+       }
+   }
+   function upload(url_name){
+       var data = new FormData($('form').get(0));
+       var lnk ;
+       if (url_name == 'url2') {
+         lnk = '/problem/CLRI8VG5QQGZ2PI/submit-excel/';
+         }
+         else{
+         lnk = '/problem/CLRI8VG5QQGZ2PI/add-programming-answer/';
+         }
+       $.ajax({
+         xhr: function()
+         {
+           var xhr = new window.XMLHttpRequest();
+           //Upload progress
+           xhr.upload.addEventListener("progress", function(evt){
+             if (evt.lengthComputable) {
+                var percentComplete = evt.loaded * 100/ evt.total ;
+                $('.progress-bar').css('width', percentComplete+'%').attr('aria-valuenow', percentComplete);
+             }
+           }, false);
+           //Download progress
+           xhr.addEventListener("progress", function(evt){
+             if (evt.lengthComputable) {
+               var percentComplete = evt.loaded / evt.total;
+             }
+           }, false);
+           return xhr;
+         },
+         url: lnk,
+         type: 'POST',
+         data: data,
+         cache: false,
+         processData: false,
+         contentType: false,
+         success: function(data) {
+            $(".hid").css({"display":"none"});
+            $("#solution_file1").val("");
+            $("#message1").val("");
+            if(data["error"])
+            {
+               $("#myModal1").modal('hide');
+               $("#modal-body").html(data["message"]);
+               $('#myModal').modal('show');
+            }
+            else{
+               $("#modal-body1").html(data["message"]);
+               $("#modal-header1").html("Success");
+               $('#myModal1').modal('show');
+            }
+            setTimeout(function(){
+              window.location.reload(1);
+            }, 4000);
+         },
+         error : function(data){
+            $('#myModal1').modal('hide');
+            $(".hid").css({"display":"none"});
+            $("#solution_file1").val("");
+            $("#message1").val("");
+            $("#modal-body").html("Some error occured. Please try after some time.");
+            $('#myModal').modal('show');
+         }
+
+     });
+   }
+
+
+$("#slack_invite").click(function(){
+     $('#warningModal').modal('hide');
+     var data = {"email":"", "first_name":"achal.sharma", "csrfmiddlewaretoken":"HPD53qg8wPhwU88ZMsfBUcQITLsVRJHvvsKzxVuedY7GOV7OxJuePyOaRExlLnRu"};
+     $.ajax({
+         type : "POST",
+         url : "/slack",
+         data : data,
+         success : function(data)
+              {
+                 if (data["data"]["ok"])
+                 {
+                     $("#modal-body1").html("You have been successfully invited. Please check your inbox for slack invite");
+                     $("#modal-header1").html("Success");
+                     $('#myModal1').modal('show');
+                 }
+                 else{
+                     $("#modal-body").html(data["data"]["error"]);
+                     $('#myModal').modal('show');
+                 }
+              }
+     });
+});
+
+$("#warning_message_slack").click(function(){
+    $("#warning-modal-body").html("We cannot ensure your anonymity on slack. click to proceed anyways.");
+    $("#warning-modal-header").html("Warning");
+    $('#warningModal').modal('show');
+});
+
+$(document).ready(function(){
+       var height = $("#main_content").height();
+       $("#left_side_bar").height(height);
+});
+
+</script>
+
+<!-- clevertap -->
+<script type="text/javascript">
+  push_clevertap_event("Participate", {
+    "Title": "genpact-machine-learning-hackathon",
+    "Status": "active",
+    "Prize": "Apple MacBook, iPad &amp; Apple Watch and Interview Opportunities with Genpact"
+});
+</script>
+
+    <!-- Quora Pixel Code (JS Helper) -->
+    <script>
+    !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+    qp('init', '40be8bd6276c44dc9d440bd031dec39d');
+    qp('track', 'ViewContent');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/40be8bd6276c44dc9d440bd031dec39d/pixel?tag=ViewContent&noscript=1"/>
+    </noscript>
+    <!-- End of Quora Pixel Code -->
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '136748720225584');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+       <img height="1" width="1"
+        src="https://www.facebook.com/tr?id=136748720225584&ev=PageView
+        &noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-N8F72KQ');</script>
+    <!-- End Google Tag Manager -->
+    <script src="Genpact%20Machine%20Learning%20Hackathon_files/platform.js" async="" defer="defer" gapi_processed="true"></script>
+
+  <!-- for right-side-bar hackathon drodown -->
+ <!-- <script>
+  function dropdownHackathon() {
+    document.getElementById("hackathon-dropdown").classList.toggle("show");
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-btn')) {
+
+      var dropdowns = document.getElementsByClassName("dropdown-menu");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        var dropdownContent = this.nextElementSibling;
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>-->
+
+
+
+</b><webengagedata><style type="text/css">#webklipper-publisher-widget-container, #webklipper-publisher-widget-container * {overflow:visible; -webkit-box-sizing: content-box; -moz-box-sizing: content-box;  box-sizing: content-box; margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;}</style><div id="webklipper-publisher-widget-container"><iframe name="webengage-engagement-callback-frame" id="webengage-engagement-callback-frame" marginheight="0" marginwidth="0" style="position: absolute; background-color: transparent; bottom: 0px; right: 0px; border: medium none; overflow: hidden; visibility: hidden; display: none;" frameborder="0"></iframe><script type="text/javascript" charset="UTF-8" async="" src="Genpact%20Machine%20Learning%20Hackathon_files/v4.xml"></script></div></webengagedata></body></html>
